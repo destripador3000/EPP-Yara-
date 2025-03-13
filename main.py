@@ -48,7 +48,7 @@ def main():
             except ValueError:
                 print(Fore.RED + "El valor ingresado no es válido." + Fore.RESET)
 
-        except (yara.Error, FileNotFoundError, PermissionError) as e:
+        except (Exception, FileNotFoundError, PermissionError) as e:
             print(Fore.RED + f" Error: {e}" + Fore.RESET)
 
 if __name__ == "__main__":
